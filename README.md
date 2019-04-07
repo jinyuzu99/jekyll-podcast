@@ -96,7 +96,8 @@ To solve these problems, I build this configurable jekyll-podcast. You can host 
    title: Your Title
    categories: podcast
    audio: your audio address # in /url/audio.file
-   length: your length length # audio length in seconds
+   type: your type # audio/x-m4a, audio/mpeg
+   length: your length # audio length in seconds
    explicit: false # true or false
    ---
    ```
