@@ -1,14 +1,16 @@
 # add the configs below to your jekyll _config.yaml
+
 podcast:
   title: My Title
   description: My description
-  url: /podcast.xml # if you renamed your podcast.xml please rename this
+  url: /podcast.xml
   author: My Author
   email: My Email
   logo: /my-logo.png # URL of your podcast logo or avatar, 1400 – 3000 pixels better
-  lang: en_US # language_TERRITORY
+  lang: en_US # in language_TERRITORY
   
-  category1: My Category1 # check https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+  # Follow https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+  category1: My Category1
   subcategory1: My Subcategory1
   category2: My Category1
   subcategory2: My Subcategory2
