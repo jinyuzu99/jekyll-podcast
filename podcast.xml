@@ -1,0 +1,47 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+
+<title>{{ site.podcast.title }}</title>
+<description>{{ site.podcast.description }}</description>
+<link>{{ site.podcast.url | absolute_url }}</link>
+<itunes:author>{{ site.podcast.author }}</itunes:author>
+<itunes:email>{{ site.podcast.email }}</itunes:email>
+<itunes:image href="{{ site.podcast.logo | absolute_url }}"/>
+<language>{{ site.podcast.lang }}</language>
+<copyright>Copyright © {{ site.podcast.title }}. All rights reserved.</copyright>
+
+<itunes:owner>
+    <itunes:name>{{ site.podcast.author }}</itunes:name>
+    <itunes:email>{{ site.podcast.email }}</itunes:email>
+</itunes:owner>
+
+<itunes:category text="{{ site.podcast.category1 | xml_escape }}">
+    <itunes:category text="{{ site.podcast.subcategory1 | xml_escape }}"/>
+</itunes:category>
+<itunes:category text="{{ site.podcast.category2 | xml_escape }}">
+    <itunes:category text="{{ site.podcast.subcategory2 | xml_escape }}"/>
+</itunes:category>
+<itunes:explicit>{{ site.podcast.explicit }}</itunes:explicit>
+<itunes:complete>{{ site.podcast.complete }}</itunes:complete>
+
+{% for post in site.categories.podcast %}
+    <item>
+
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <link>{{ post.url | absolute_url }}</link>
+        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        <enclosure url="{{ post.audio | absolute_url }}" length="{{ post.length }}" type="{{ post.type }}"/>
+        <guid>{{ post.url | absolute_url }}</guid>
+        <itunes:explicit>{{ post.explicit | xml_escape }}</itunes:explicit>
+
+    </item>
+{% endfor %}
+
+</channel>
+</rss>
