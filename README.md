@@ -71,7 +71,7 @@ Use [http://podba.se/validate/](https://podba.se/validate) to validate your podc
 
 You can also use [AntennaPod](http://antennapod.org) to test performance on Android.
 
-## Attention
+### Attention
 
 - Your `site.url` should start with `http://` or `https://`.
 - Change `url` if you renamed or moved `podcast.xml`.
