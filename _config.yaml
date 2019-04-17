@@ -1,19 +1,14 @@
-# add the configs below to your jekyll _config.yaml
+# Add the configs below to your jekyll _config.yaml
 
 podcast:
-  title: My Title
-  description: My description
+  title: [Title]
+  description: [description]
   url: /podcast.xml
-  author: My Author
-  email: My Email
-  logo: /my-logo.png # URL of your podcast logo or avatar, 1400 – 3000 pixels better
-  lang: en_US # in language_TERRITORY
-  
-  # Follow https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
-  category1: My Category1
-  subcategory1: My Subcategory1
-  category2: My Category1
-  subcategory2: My Subcategory2
-
+  author: [Author]
+  email: [email]
+  logo: [/my-logo.png] # URL of your podcast logo or avatar, 1400 – 3000 pixels better
+  lang: en_US # http://www.loc.gov/standards/iso639-2/php/code_list.php
+  category: My Category1 # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+  subcategory: My Subcategory1
   explicit: false # true or false
   complete: no # yes or no

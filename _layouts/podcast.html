@@ -1,7 +1,11 @@
-<!--Copy codes below to your Jekyll `/_layouts/podcast.html` before `{{ content }}`.--> 
+---
+layout: post
+---
 
 <br><br>
 <audio controls preload="auto">
-  <source src="{{ page.audio | absolute_url }}" type="{{ post.type }}">
+  <source src="{{ page.audio | absolute_url }}">
 </audio>
 <br>
+
+{{ content }}
