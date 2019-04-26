@@ -29,18 +29,18 @@ layout: null
         {% for post in site.categories.podcast %}
             <item>
                 <title>{{ post.title }}</title>
-                <itunes:episodeType>{{ post.episodeType }}</itunes:episodeType>
-                <itunes:episode>{{ post.episode }}</itunes:episode>
-                <itunes:season>{{ post.season }}</itunes:season>
                 <itunes:author>{{ post.author }}</itunes:author>
+                <itunes:season>{{ post.season }}</itunes:season>
+                <itunes:episode>{{ post.episode }}</itunes:episode>
+                <itunes:episodeType>{{ post.episodeType }}</itunes:episodeType>
+                <itunes:explicit>{{ post.explicit }}</itunes:explicit>
                 <link>{{ post.url | absolute_url }}</link>
                 <guid>{{ post.url | absolute_url }}</guid>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
                 <itunes:duration>{{ post.length | xml_escape }}</itunes:duration>
                 <enclosure url="{{ post.audio | absolute_url }}" />
-                <itunes:explicit>{{ post.explicit }}</itunes:explicit>
                 <itunes:summary>{{ post.excerpt | strip_html }}{{ post.url | absolute_url }}</itunes:summary>
-                <description><content:encoded><![CDATA[{{ post.content | strip_newlines }}]]></content:encoded></description>
+                <description><content:encoded>{{ post.content | strip_newlines | xml_escape }}</content:encoded></description>
             </item>
         {% endfor %}
     </channel>
