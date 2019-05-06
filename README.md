@@ -23,17 +23,17 @@ To solve these problems, I build this configurable jekyll-podcast. You can host 
 
     ``` yaml
     podcast:
-        title: [Title]
-        description: [description]
-        url: /podcast.xml
-        author: [Author]
-        email: [email]
-        logo: [/my-logo.png] # URL of your podcast logo or avatar, 1400 – 3000 pixels better
-        lang: en_US # http://www.loc.gov/standards/iso639-2/php/code_list.php
-        category: My Category1 # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
-        subcategory: My Subcategory1
-        explicit: false # true or false
-        complete: no # yes or no
+    title: [Title]
+    description: [description]
+    url: /podcast.xml
+    author: [Author]
+    email: [email]
+    logo: [/my-logo.png] # URL of your podcast logo or avatar, 1400 – 3000 pixels better
+    lang: en # http://www.loc.gov/standards/iso639-2/php/code_list.php
+    category: My Category1 # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+    subcategory: My Subcategory1
+    explicit: false # true or false
+    complete: no # yes or no
     ```
 
 ### Post
