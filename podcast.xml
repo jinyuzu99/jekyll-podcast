@@ -35,7 +35,7 @@ layout: null
             <link>{{ post.url | absolute_url }}</link>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <itunes:duration>{{ post.length | xml_escape }}</itunes:duration>
-            <enclosure url="{{ post.audio | absolute_url }}" />
+            <enclosure url="{{ post.audio | absolute_url }}" length="{{ post.length | xml_escape }}"/>
             <description>{{ post.content | xml_escape | strip_newlines }}</description>
         </item>
         {% endfor %}

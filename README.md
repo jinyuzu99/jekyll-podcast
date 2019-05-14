@@ -1,8 +1,8 @@
-# jekyll-podcast
+# Jekyll Podcast
 
-jekyll-podcast generates audio podcast feed and note for Jekyll.
+Jekyll Podcast generates audio podcast feed and note for Jekyll.
 
-## Why jekyll-podcast
+## Why Jekyll Podcast
 
 Uploading podcasts is not as easy as uploading videos, you have to own or borrow a web server to host your content.
 
@@ -10,11 +10,11 @@ There are a lot of platforms for people to upload podcasts, but some of them spe
 
 Although there are also some podcast holding solutions for Jekyll, they are difficult to use. And they don't have a solution to generate web pages for your podcast.
 
-To solve these problems, I build this configurable jekyll-podcast. You can host it on [GitHub](http://github.com) for free, so you can buy you a better 🎙 microphone.
+To solve these problems, I build this configurable jekyll-podcast. You can host it on [GitHub](http://github.com) for free, then you can buy you a better 🎙 microphone.
 
 ## Getting Started
 
-### Seting Up
+### Setting Up
 
 1. Download [all files](https://github.com/sayomelu/jekyll-podcast/archive/master.zip) from GitHub.
 2. Copy `podcast.xml` to your Jekyll root `/`.
@@ -23,17 +23,17 @@ To solve these problems, I build this configurable jekyll-podcast. You can host 
 
     ``` yaml
     podcast:
-    title: [Title]
-    description: [description]
-    url: /podcast.xml
-    author: [Author]
-    email: [email]
-    logo: [/my-logo.png] # URL of your podcast logo or avatar, 1400 – 3000 pixels better
-    lang: en # http://www.loc.gov/standards/iso639-2/php/code_list.php
-    category: My Category1 # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
-    subcategory: My Subcategory1
-    explicit: false # true or false
-    complete: no # yes or no
+      title: [Title]
+      description: [Description]
+      url: /podcast.xml
+      author: [Author]
+      email: [Email]
+      logo: [Podcast Logo URL] # Podcast logo URL, 1400 – 3000 pixels
+      lang: [Language] # http://www.loc.gov/standards/iso639-2/php/code_list.php
+      category: [Category] # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+      subcategory: [Subcategory]
+      explicit: [Explicit State] # true or false
+      complete: [Complete State] # yes or no
     ```
 
 ### Post
@@ -42,38 +42,37 @@ To solve these problems, I build this configurable jekyll-podcast. You can host 
 
    ``` yaml
     ---
-    layout: podcast
-    categories: podcast
+    layout: podcast # Must be "podcast"
+    categories: podcast # Must be "podcast" or "Podcast"
     title: [Podcast Title]
-    author: [author] # podcast author
-    season: [season-number]
-    episode: [episode-number]
-    episodeType: [episode-type] # full, trailer or bonus
-    explicit: [explicit] # true or false
-    audio: [audio-file-url]
-    length: [audio-length] # audio length in seconds
+    author: [Author] # Podcast author
+    season: [Season Number]
+    episode: [Episode Number]
+    episodeType: [Episode Type] # full, trailer or bonus
+    explicit: [Explicit State] # true or false
+    audio: [Audio File URL]
+    length: [Audio Length] # Audio length in seconds
     ---
    ```
 
-2. Write your Show Notes with `Markdown` below.
+2. Write your Episode Notes with `Markdown` below.
 3. Upload it to your Jekyll server.
-4. Your podcast feed will be at `url/podcast.xml`.
+4. Your podcast feed will be at `[Blog URL]/podcast.xml`.
 
 ### Validating
 
 Use [Podcast Validator](https://podba.se/validate) to validate your podcast feed.
 
-You can also use [iTunes](https://www.apple.com/itunes/) with `itpc://your.podcast.url`, [AntennaPod](http://antennapod.org) to test performance on Android.
+You can also use [iTunes](https://www.apple.com/itunes/) (PC), [AntennaPod](http://antennapod.org) (Android), Apple Podcasts (iOS) to validate.
 
 ### Attention
 
-- Your `site.url` should start with `http://` or `https://`.
+- Your `url` in `_config.yaml` should start with `http://` or `https://`.
 - Change `podcast.url` if you renamed or moved `podcast.xml`.
-- `podcast.category`, `podcast.subcategory` don't need to be all filled.
 
 ## Sample
 
-My [podcast](https://sayomelu.github.io/podcast.xml) on my [blog](http://sayomelu.github.io) hosted on GitHub.
+[Sayo Cast](https://sayo-melu.github.io/podcast.xml) with [Sayo's Blog](http://sayo-melu.github.io) hosted on GitHub.
 
 ## Reference
 
