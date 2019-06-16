@@ -11,7 +11,7 @@ layout: null
         <itunes:author>{{ site.podcast.author }}</itunes:author>
         <itunes:email>{{ site.podcast.email }}</itunes:email>
         <itunes:image href="{{ site.podcast.logo | absolute_url }}" />
-        <language>{{ site.podcast.lang }}</language>
+        <language>{{ site.podcast.language }}</language>
         <copyright>Copyright © {{ site.podcast.author }}</copyright>
         <itunes:owner>
             <itunes:name>{{ site.podcast.author }}</itunes:name>

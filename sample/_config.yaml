@@ -1,0 +1,14 @@
+podcast:
+  title: Sample
+  description: This is a sample
+  url: /podcast.xml # Podcast XML URL
+  author: Sayo Melu
+  email: podcast@sample.net
+  logo: https://sample.net/logo.png # Logo in 1400 – 3000 pixel
+  language: en # http://www.loc.gov/standards/iso639-2/php/code_list.php
+  category: Society &amp; Culture  # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+  subcategory: Personal Journals
+  type: episodic # episodic | serial
+  explicit: false # true | false
+  complete: "no" # "yes" | "no"
+  block: "no" # "yes" | "no"
