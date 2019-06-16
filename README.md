@@ -64,14 +64,9 @@ length: [Audio Length] # in seconds
 
 ### Validating
 
-Use [Podcast Validator](https://podba.se/validate) to validate your podcast feed.
+Use [Podcast Validator](https://podba.se/validate) (Web), [iTunes](https://www.apple.com/itunes/) (macOS, Windows), [AntennaPod](http://antennapod.org) (Android), Apple Podcasts (iOS), etc. to validate your RSS feed.
 
-You can also use [iTunes](https://www.apple.com/itunes/) (macOS, Windows), [AntennaPod](http://antennapod.org) (Android), Apple Podcasts (iOS) to validate.
-
-### Attention
-
-- Your `url` in `_config.yaml` should start with `http://` or `https://`.
-- Change `podcast.url` if you renamed or moved `podcast.xml`.
+If you have any problems, please [create an issue](https://github.com/sayo-melu/jekyll-podcast/issues/new) on GitHub to ask questions or suggest ideas.
 
 ## Sample
 
