@@ -10,7 +10,7 @@ There are a lot of platforms for people to upload podcasts, but some of them spe
 
 Although there are also some podcast holding solutions for Jekyll, they are difficult to use. And they don't have a solution to generate web pages for your podcast.
 
-To solve these problems, I build this configurable jekyll-podcast. You can host it on [GitHub](http://github.com) (or other services) for free, then you can buy a better 🎙.
+To solve these problems, I build this configurable jekyll-podcast. You can host it on free Jekyll services (like [GitHub](http://github.com)), then you can buy a better 🎙.
 
 ## Getting Started
 
@@ -58,15 +58,15 @@ length: [Audio Length] # in seconds
 ---
 ```
 
-2. Write your **Episode Notes** with [Markdown](https://daringfireball.net/projects/markdown/) below.
-3. Upload all Jekyll files to your Jekyll server.
-4. Your podcast feed will be at `[Blog URL]/podcast.xml`.
+1. Write your **Episode Notes** below.
+2. Upload all Jekyll project files to your Jekyll server.
+3. Your podcast feed will be at `[Jekyll Project URL]/podcast.xml`.
 
 ### Validating
 
 Use [Podcast Validator](https://podba.se/validate) to validate your podcast feed.
 
-You can also use [iTunes](https://www.apple.com/itunes/) (PC), [AntennaPod](http://antennapod.org) (Android), Apple Podcasts (iOS) to validate.
+You can also use [iTunes](https://www.apple.com/itunes/) (macOS, Windows), [AntennaPod](http://antennapod.org) (Android), Apple Podcasts (iOS) to validate.
 
 ### Attention
 
