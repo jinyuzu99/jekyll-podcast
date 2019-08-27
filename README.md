@@ -1,81 +1,81 @@
-# Jekyll Podcast
+# jekyll podcast
 
-Jekyll Podcast generates audio podcast feed and note for Jekyll.
+jekyll podcast generates audio podcast feed and note for jekyll.
 
-## Why Jekyll Podcast
+## why jekyll podcast
 
-Uploading podcasts is not as easy as uploading videos, you have to own or borrow a web server to host your content.
+uploading podcasts is not as easy as uploading videos, you have to own or borrow a web server to host your content.
 
-There are a lot of platforms for people to upload podcasts, but some of them spend your money, some of them cannot be configured to your requirement.
+there are a lot of platforms for people to upload podcasts, but some of them spend your money, some of them cannot be configured to your requirement.
 
-Although there are also some podcast holding solutions for Jekyll, they are difficult to use. And they don't have a solution to generate web pages for your podcast.
+although there are also some podcast holding solutions for jekyll, they are difficult to use. and they don't have a solution to generate web pages for your podcast.
 
-To solve these problems, I build this configurable jekyll-podcast. You can host it on free Jekyll services (like [GitHub](http://github.com)), then you can buy a better 🎙.
+to solve these problems, t build this configurable jekyll-podcast. you can host it on free jekyll services (like [github](https://github.com), [gitlab](https://gitlab.com)), then you can buy a better 🎙.
 
-## Getting Started
+## getting started
 
-### Setting Up
+### setting up
 
-1. Download [all files](https://github.com/sayo-melu/jekyll-podcast/archive/master.zip) from GitHub.
-2. Copy `podcast.xml` to `[Jekyll Project]/`.
-3. Copy `podcast.html` to `[Jekyll Project]/_layouts/`.
-4. Add configs below to `[Jekyll Project]/_config.yaml`, then edit it according to your information. (see [sample](sample/_config.yaml))
+1. download [all files](https://github.com/sayo-melu/jekyll-podcast/archive/master.zip) from github.
+2. copy `podcast.xml` to `[jekyll project]/`.
+3. copy `podcast.html` to `[jekyll project]/_layouts/`.
+4. add configs below to `[jekyll project]/_config.yaml`, then edit it according to your information. (see [sample](sample/_config.yaml))
 
 ``` yaml
 podcast:
-  title: [Title]
-  description: [Description]
-  url: /podcast.xml # Podcast XML URL
-  author: [Podcast Author]
-  email: [Podcast Email]
-  logo: [Podcast Logo URL] # Logo in 1400 – 3000 pixel
-  language: [Language] # http://www.loc.gov/standards/iso639-2/php/code_list.php
-  category: [Category] # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
-  subcategory: [Subcategory]
-  type: [Podcast Type] # episodic | serial
-  explicit: [Explicit State] # true | false
-  complete: [Complete State] # "yes" | "no"
-  block: [Block State] # "yes" | "no"
+  title: [title]
+  description: [description]
+  url: /podcast.xml # podcast xml url
+  author: [podcast author]
+  email: [podcast email]
+  logo: [podcast logo url] # logo in 1400 – 3000 pixel
+  language: [language] # http://www.loc.gov/standards/iso639-2/php/code_list.php
+  category: [category] # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
+  subcategory: [subcategory]
+  type: [podcast type] # episodic | serial
+  explicit: [explicit state] # true | false
+  complete: [complete state] # 'yes' | 'no'
+  block: [block state] # 'yes' | 'no'
 ```
 
-### Post
+### post
 
-1. Learn Jekyll with [Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/).
-2. [Create a new post](https://jekyllrb.com/docs/posts/#creating-posts) with [front matter](https://jekyllrb.com/docs/front-matter/) below, then edit it according to your information. (see [sample](/sample/2019-4-6-jekyll-podcast-sample.md))
+1. learn kekyll with [step by step tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/).
+2. [create a new post](https://jekyllrb.com/docs/posts/#creating-posts) with [front matter](https://jekyllrb.com/docs/front-matter/) below, then edit it according to your information. (see [sample](/sample/2019-4-6-jekyll-podcast-sample.md))
 
 ``` yaml
 ---
 layout: podcast
-categories: podcast # podcast | Podcast
-title: [Podcast Title]
-author: [Episode Author]
-season: [Season Number]
-episode: [Episode Number]
-episodeType: [Episode Type] # full | trailer | bonus
-explicit: [Explicit State] # true | false
-audio: [Audio File URL]
-length: [Audio Length] # in seconds
+categories: podcast # podcast
+title: jekyll podcast sample
+author: sayo melu
+season: 2
+episode: 9
+episodeType: full # full | trailer | bonus
+explicit: false # true | false
+audio: https://sample.net/audio.opus
+length: 3927 # in seconds
 ---
 ```
 
-1. Write your **Episode Notes** below.
-2. Upload all Jekyll project files to your Jekyll server.
-3. Your podcast feed will be at `[Jekyll Project URL]/podcast.xml`.
+1. write your **episode notes** below.
+2. upload all jekyll project files to your server.
+3. your podcast feed will be at `[jekyll project url]/podcast.xml`.
 
-### Validating
+### validating
 
-Use [Podcast Validator](https://podba.se/validate) (Web), [iTunes](https://www.apple.com/itunes/) (macOS, Windows), [AntennaPod](http://antennapod.org) (Android), Apple Podcasts (iOS), etc. to validate your RSS feed.
+use [podcast validator](https://podba.se/validate) (web), [itunes](https://www.apple.com/itunes/) (macos, windows), [antennapod](http://antennapod.org) (android), apple podcasts (ios), etc. to validate your rss feed.
 
-If you have any problems, please [create an issue](https://github.com/sayo-melu/jekyll-podcast/issues/new) on GitHub to ask questions or suggest ideas.
+if you have any problems, please [create an issue](https://github.com/sayo-melu/jekyll-podcast/issues/new) on github to ask questions or suggest ideas.
 
-## Sample
+## sample
 
-[Sayo Cast](https://sayo-melu.github.io/podcast.xml) with [Sayo's Blog](http://sayo-melu.github.io) hosted on GitHub.
+[sayo cast](https://sayo-melu.xyz/podcast) hosted on gitlab.
 
-## Reference
+## reference
 
-- [A podcaster’s guide to RSS - Apple](https://help.apple.com/itc/podcasts_connect/#/itcb54353390)
+- [a podcaster’s guide to rss - apple](https://help.apple.com/itc/podcasts_connect/#/itcb54353390)
 
-- [Apple Podcasts categories - Apple](https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12)
+- [apple ppdcasts categories - apple](https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12)
 
-- [Add a podcast using an RSS feed - Google](https://support.google.com/googleplay/podcasts/answer/6260341)
+- [add a podcast using an rss feed - google](https://support.google.com/googleplay/podcasts/answer/6260341)
