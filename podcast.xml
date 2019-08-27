@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /podcast.xml
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -10,7 +11,7 @@ layout: null
         <link>{{ "/" | absolute_url }}</link>
         <itunes:author>{{ site.podcast.author }}</itunes:author>
         <itunes:email>{{ site.podcast.email }}</itunes:email>
-        <itunes:image href="{{ site.podcast.logo | absolute_url }}" />
+        <itunes:image href="{{ site.podcast.logo | absolute_url }}"/>
         <language>{{ site.podcast.language }}</language>
         <copyright>Copyright © {{ site.podcast.author }}</copyright>
         <itunes:owner>
