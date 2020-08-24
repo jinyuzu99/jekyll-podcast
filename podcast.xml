@@ -32,6 +32,8 @@ layout: null
             <itunes:episode>{{ post.episode }}</itunes:episode>
             <itunes:episodeType>{{ post.episodeType }}</itunes:episodeType>
             <itunes:explicit>{{ post.explicit }}</itunes:explicit>
+            <itunes:image href='{{ post.cover | default: site.podcast.logo | absolute_url }}'/>
+            <itunes:summary><![CDATA[{{ post.content | xml_escape | strip_newlines }}]]></itunes:summary>
             <link>{{ post.url | absolute_url }}</link>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <itunes:duration>{{ post.length | xml_escape }}</itunes:duration>
