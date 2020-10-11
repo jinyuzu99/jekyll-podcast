@@ -33,10 +33,12 @@ layout: null
             <itunes:episodeType>{{ post.episodeType }}</itunes:episodeType>
             <itunes:explicit>{{ post.explicit }}</itunes:explicit>
             <link>{{ post.url | absolute_url }}</link>
+            <itunes:image href='{{ post.cover | default: site.podcast.logo | absolute_url }}'/>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <itunes:duration>{{ post.length | xml_escape }}</itunes:duration>
+            <guid>{{ post.audio | absolute_url }}</guid>
             <enclosure url='{{ post.audio | absolute_url }}' length='{{ post.length | xml_escape }}'/>
-            <description>{{ post.content | xml_escape | strip_newlines }}</description>
+            <description><![CDATA[{{ post.content | cdata_escape }}]]></description>
         </item>
         {% endfor %}
     </channel>
