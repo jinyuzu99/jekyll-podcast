@@ -5,10 +5,10 @@ podcast:
   author: [podcast author]
   email: [podcast email]
   logo: [podcast logo url] # logo in 1400 – 3000 pixel
-  language: [language] # http://www.loc.gov/standards/iso639-2/php/code_list.php
+  language: [language] # http://www.loc.gov/standards/iso639-2/php/code_list.php (ie. 'en-us')
   category: [category] # https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12
   subcategory: [subcategory]
   type: [podcast type] # episodic | serial
-  explicit: [explicit state] # true | false
+  explicit: [explicit state] # true (must be true if at least one episode is explicit) | false
   complete: [complete state] # 'yes' | 'no'
-  block: [block state] # 'yes' | 'no'
+  block: [block state] # 'yes' (hide in Apple’s directory) | 'no'
