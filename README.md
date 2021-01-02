@@ -19,7 +19,7 @@ to solve these problems, t build this configurable jekyll-podcast. you can host 
 1. download [all files](https://github.com/sayo-melu/jekyll-podcast/archive/master.zip) from github.
 2. copy `podcast.xml` to `[jekyll project]/`.
 3. copy `podcast.html` to `[jekyll project]/_layouts/`.
-4. add configs below to `[jekyll project]/_config.yaml`, then edit it according to your information. (see [sample](sample/_config.yaml))
+4. add configs below to `[jekyll project]/_config.yaml` (⚠ before the "Build settings" section), then edit it according to your information. (see [sample](sample/_config.yaml))
 
 ``` yaml
 podcast:
